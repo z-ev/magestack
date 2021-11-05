@@ -1,5 +1,5 @@
 # magestack
-
+## Docker
 ```shell script
 $ cp .env.docker .env
 $ docker-compose up -d --build
@@ -11,3 +11,11 @@ $ docker-compose up -d --build
 ```
 ### Check in browser
 http://magestack.loc:8280/test.php
+
+## Kubernetes
+***(in the process of developing)***
+```shell script
+kubectl apply -f .kube/loc/cm
+kubectl apply -f .kube/loc/deployment
+kubectl apply -f .kube/loc/services
+```

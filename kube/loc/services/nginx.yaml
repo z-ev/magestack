@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: magestack-nginx
+spec:
+  type: LoadBalancer
+  selector:
+    app: magestack-nginx
+  ports:
+    - port: 80
+      targetPort: 80
