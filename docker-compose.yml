@@ -68,6 +68,7 @@ services:
       - ./docker/services/php/${DOCKER_PHP_VERSION}/conf.d/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
       - ./docker/services/php/${DOCKER_PHP_VERSION}/conf.d/supervisord.ini:/etc/supervisor.d/supervisord.ini
       - ./docker/scripts/php.sh:/scripts/php.sh
+      - ./docker/scripts/magento.sh:/scripts/magento.sh
     environment:
       - PROJECT_PATCH=${DOCKER_PROJECT_PATCH}
       - MYSQL_HOST=${DOCKER_PROJECT_NAME}_mysql

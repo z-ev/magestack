@@ -16,7 +16,8 @@ RUN apk update && apk upgrade && apk add --no-cache \
 	bash \
 	libmcrypt-dev \
 	icu-dev \
-    libxslt-dev
+    libxslt-dev \
+    php7-mcrypt
 
 RUN docker-php-ext-install -j$(nproc) \
     pdo_mysql \

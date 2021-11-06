@@ -9,8 +9,18 @@ $ docker-compose up -d --build
 ...
 127.0.0.1 magestack.loc www.magestack.loc
 ```
+### install magento
+```shell script
+$ docker-compose exec php bash
+$ /scripts/magento.sh
+```
 ### Check in browser
-http://magestack.loc:8280/test.php
+http://magestack.loc:8280/
+
+***Admin panel***
+http://magestack.loc:8280/mage-admin
+***admin:admin123***
+
 
 ## Kubernetes
 ***(in the process of developing)***

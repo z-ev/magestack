@@ -2,7 +2,7 @@
 .idea/
 /logs/*
 !/logs/.gitkeep
-
+/magento/*
 #--------------------------#
 # Magento Default Files    #
 #--------------------------#
